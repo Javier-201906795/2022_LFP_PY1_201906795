@@ -16,4 +16,4 @@ if __name__ == '__main__':
     redux.reducer("LEER_ARCHIVO")
 
     #Identifacar <Operaciones>
-    redux.reducer("IDENTIFICAR_TIPO")
+    redux.reducer("ANALIZAR")

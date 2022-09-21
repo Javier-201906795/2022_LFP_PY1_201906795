@@ -12,6 +12,10 @@ import AccionesLectura as accL
 global estado
 estado = estado1.estado()
 
+#█┼┼┼┼┼┼┼┼┼┼┼| Estado |┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼█
+global texto, textolista, textoposicion
+
+
 
 #█┼┼┼┼┼┼┼┼┼┼┼| REDUCER |┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼█
 def reducer(instruccion):
@@ -23,13 +27,20 @@ def reducer(instruccion):
     try:
         if (instruccion == "LEER_ARCHIVO"):
             print("• • Leyendo Archivo")
-            arh = accL.leerarhivo()
+
+            arch = accL.leerarhivo()
+            global texto, textolista, textoposicion
+            texto = arch.get("texto")
+            textolista = arch.get("lista")
+            textoposicion = arch.get("posicion")
+
+            
             print("• • •")
-            print("Texto: " ,arh["texto"])
+            print("Texto: \n" , texto)
             print("• • •")
-            print("Lista: " ,arh["lista"])
-            print("• • •")
-        elif (instruccion == "IDENTIFICAR_TIPO"):
+
+
+        elif (instruccion == "ANALIZAR"):
             print("• • Buscando {<Tipo>}")
             print("• • •")
             print("hola")

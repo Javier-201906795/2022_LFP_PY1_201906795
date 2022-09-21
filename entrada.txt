@@ -1,3 +1,8 @@
-<Numeros>10</Numero>
+<Tipo>
+<Operacion=SUMA>
+    <Numero>50</Numero>
+    <Numero>25</Numero>
+</Operacion>
 
-<Numero>20</Numero>
+
+</Tipo>
