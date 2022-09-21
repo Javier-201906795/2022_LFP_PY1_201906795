@@ -19,5 +19,6 @@ def leerarhivo():
             texto_archivo += i
             lista_archivo.append(i)
     
-    print(texto_archivo)
+    
+    return {"texto": texto_archivo, "lista": lista_archivo}
     
