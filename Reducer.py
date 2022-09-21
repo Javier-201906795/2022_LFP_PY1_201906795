@@ -24,10 +24,11 @@ def reducer(instruccion):
         if (instruccion == "LEER_ARCHIVO"):
             print("• • Leyendo Archivo")
             arh = accL.leerarhivo()
-            print(arh)
-            print(arh.lista)
-
-            
+            print("• • •")
+            print("Texto: " ,arh["texto"])
+            print("• • •")
+            print("Lista: " ,arh["lista"])
+            print("• • •")
         else:
             print("No se reconcio la instruccion")
     
