@@ -29,6 +29,10 @@ def reducer(instruccion):
             print("• • •")
             print("Lista: " ,arh["lista"])
             print("• • •")
+        elif (instruccion == "IDENTIFICAR_TIPO"):
+            print("• • Buscando {<Tipo>}")
+            print("• • •")
+            print("hola")
         else:
             print("No se reconcio la instruccion")
     

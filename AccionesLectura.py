@@ -1,6 +1,5 @@
 
-global test
-test = 1
+
 
 def leerarhivo():
     try:

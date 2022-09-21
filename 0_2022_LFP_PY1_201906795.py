@@ -14,3 +14,6 @@ if __name__ == '__main__':
 
     #Leer archivo y guardarlo en una lista
     redux.reducer("LEER_ARCHIVO")
+
+    #Identifacar <Operaciones>
+    redux.reducer("IDENTIFICAR_TIPO")
