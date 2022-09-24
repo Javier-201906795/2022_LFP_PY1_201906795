@@ -1,8 +1,2 @@
-<Tipo>
-<Operacion=SUMA>
     <Numero>50</Numero>
     <Numero>25</Numero>
-</Operacion>
-
-
-</Tipo>

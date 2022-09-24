@@ -7,6 +7,7 @@
 #█┼┼┼┼┼┼┼┼┼┼┼[ IMPORTACIONES ]┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼█
 import Estado as estado1
 import AccionesLectura as accL
+import AccionesBusquedad as accB
 
 #Iniciando la base de datos
 global estado
@@ -41,9 +42,10 @@ def reducer(instruccion):
 
 
         elif (instruccion == "ANALIZAR"):
-            print("• • Buscando {<Tipo>}")
             print("• • •")
-            print("hola")
+
+            accB.Buscar("NUMERO",textolista[0])
+
         else:
             print("No se reconcio la instruccion")
     
