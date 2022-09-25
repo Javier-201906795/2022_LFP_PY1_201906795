@@ -56,6 +56,7 @@ def buscarnumero(texto):
         cadena = texto
         columna = 0  
         numero = -999
+        cont = 0
 
         #Recorre token numero en texto en busquead de concidencias
         for i in tokensNumero:
